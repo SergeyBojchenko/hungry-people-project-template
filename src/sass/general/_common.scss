@@ -1,0 +1,42 @@
+.list {
+    padding: 0;
+    margin: 0;
+  }
+   
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+  }
+  
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
