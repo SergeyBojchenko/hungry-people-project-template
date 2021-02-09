@@ -1,5 +1,7 @@
+@import './general/modern-normalize';
 @import './utils/variables';
-@import './base/common';
+@import './general/common';
+@import './utils//placeholders';
 @import './components/header';
 @import './components/hero';
 @import './components/about-us';

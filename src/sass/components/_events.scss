@@ -1,0 +1,95 @@
+.events {
+    width: 100%;
+    height: 675px;
+    background-color: $black-menu-color;
+    background-image: linear-gradient( to right, $black-opacity60-color, $black-opacity60-color), url(../images/events-bg.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+           screen and (-webkit-min-device-pixel-ratio: 2),
+           screen and (-o-min-device-pixel-ratio: 2/1),
+           screen and (min-resolution: 192dpi),
+           screen and (min-resolution: 2dppx) {
+           background-image: linear-gradient(to right,$black-opacity60-color, $black-opacity60-color), url(../images/events-bg@2x.jpg);
+      }
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.events-title {
+    display: block;
+    padding: 43px;
+    font-weight: $font-weight-bold;
+    line-height: 1.17;
+    letter-spacing: 0.5em;
+    color: $primary-white-color;
+}
+.events-list {
+    display: flex;
+    justify-content: center;
+}
+.events-item {
+    position: relative;
+    &:nth-child(odd) {
+        margin-left: 205px;
+        margin-right: 40px;
+    }
+    &:nth-child(even) {
+        margin-right: 205px;
+        margin-left: 40px;
+    }
+}
+.events-item {
+    &:nth-child(odd) .events-label{
+        transform: rotate(90deg);
+        top: 0;
+        right: -100%;
+    }
+    &:nth-child(even) .events-label{
+        transform: rotate(-90deg);
+        bottom: -80px;
+        left: 0;
+    }
+}
+
+.events-card {
+    position: relative;
+    // max-width: 475px;
+    min-width: 475px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px $primary-black-color;
+}
+.events-label {
+    position: absolute;
+    transform-origin: top left;
+    display: flex;
+    align-items: center;
+    width: 475px;
+    height: 80px;
+    padding: 25px;
+    font-family: $font-family-title;
+    color: $primary-white-color;
+    background-color: $primary-black-color;
+    text-transform: uppercase;
+}
+.events-accent {
+    position: absolute;
+    @extend %accent-square;
+}
+.events-item {
+    &:nth-child(odd) .events-accent{
+        top: 25%;
+        left: -25%;
+    }
+    &:nth-child(even) .events-accent{
+        top: 25%;
+        right: -25%;
+    }
+}
+.events-contact {
+    display: block;
+    padding: 44px;
+    line-height: 1;
+    font-weight: $font-weight-body;
+    color: $white-opacity50-color;
+}
